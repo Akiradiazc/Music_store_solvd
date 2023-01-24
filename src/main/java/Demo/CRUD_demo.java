@@ -12,9 +12,12 @@ public class CRUD_demo {
         //Controller
         ClientsController controller = new ClientsController();
 
+        String sql = "INSERT INTO Clients VALUES ('"+client1.getFirst_name()+"','"+client1.getLast_name()+"','"+client1.getAddress()+"','"+client1.getBirthdate()+"')";
+        System.out.println(sql);
+        /*
         //CREATE a client
         controller.create(client1);
-/*
+
         //READ clients
         controller.readClients();
 

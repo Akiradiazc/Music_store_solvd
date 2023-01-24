@@ -18,7 +18,7 @@ public class ClientsDAOImpl implements IClientsDAO{
         Statement statement = null;
         Connection connection = null;
 
-        String sql = "INSERT INTO Clients VALUES (NULL,"+clients.getFirst_name()+"','"+clients.getLast_name()+"','"+clients.getAddress()+"','"+clients.getBirthdate()+"')'";
+        String sql = "INSERT INTO Clients VALUES ('"+clients.getFirst_name()+"','"+clients.getLast_name()+"','"+clients.getAddress()+"','"+clients.getBirthdate()+"')";
 
         try{
             connection = ConnectionClass.connect();
