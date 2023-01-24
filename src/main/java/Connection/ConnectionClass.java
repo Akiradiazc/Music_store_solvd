@@ -9,7 +9,7 @@ public class ConnectionClass {
         String password = "akiretioN27#";
         Connection connection = null;
 
-        System.out.println("INSERT INTO Clients VALUES (NULL,"+"David"+"','"+"Diaz"+"','"+"Street 456"+"','"+"1999-02-27"+"')'");
+        //System.out.println("INSERT INTO Clients VALUES (NULL,"+"David"+"','"+"Diaz"+"','"+"Street 456"+"','"+"1999-02-27"+"')'");
 
         try{
             connection = DriverManager.getConnection(url, username, password);
