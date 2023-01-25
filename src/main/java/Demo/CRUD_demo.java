@@ -4,28 +4,40 @@ import Controller.ClientsController;
 import Model.Clients;
 
 import java.sql.Date;
+import java.util.List;
 
 public class CRUD_demo {
     public static void main(String[] args){
-        Clients client1 = new Clients("Fernanda", "Jacobo", "Street 145", Date.valueOf("1999-03-09"));
 
-        //Controller
+        //-------- CONTROLLER
         ClientsController controller = new ClientsController();
 
-        String sql = "INSERT INTO Clients VALUES ('"+client1.getFirst_name()+"','"+client1.getLast_name()+"','"+client1.getAddress()+"','"+client1.getBirthdate()+"')";
-        System.out.println(sql);
-        /*
-        //CREATE a client
-        controller.create(client1);
+        //-------- CREATE a client
+        // Create a new client to put in DB || Through get/set or constructor
+        //Clients clientCreate = new Clients();
+        Clients clientCreate = new Clients("Abel", "Tesfaye", "West Street 23", Date.valueOf("1992-02-16"));
+        // Puts Created Client into the DB
+        controller.create(clientCreate);
 
-        //READ clients
-        controller.readClients();
+        //-------- READ clients
+        // Prints all clients in DB and assigns them to a ClientsList
+        List<Clients> ClientsListDB = controller.readClients();
 
-        //UPDATE client
-        client1.setAddress("Street 896");
-        controller.update(client1);
 
-        //DELETE client
-  */
+        //-------- UPDATE client
+        // Selecting a client to update through index of array (idClients-1)
+        Clients clientUpdate = ClientsListDB.get(3);
+        // Modifications to perform
+        clientUpdate.setAddress("East Street 896");
+        // Updating client
+        controller.update(clientUpdate);
+
+        //-------- DELETE client
+        // Selecting a client to update through index of array (idClients-1)
+        Clients clientDelete = ClientsListDB.get(3);
+        // Deleting client
+        controller.delete(clientDelete);
+
+
     }
 }

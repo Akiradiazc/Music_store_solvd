@@ -21,11 +21,12 @@ public class ClientsController {
     }
 
     // DAO to read clients
-    public void readClients(){
+    public List<Clients> readClients(){
         List<Clients> clientsList = new ArrayList<>();
         IClientsDAO dao = new ClientsDAOImpl();
         clientsList = dao.read();
         view.viewClients(clientsList);
+        return clientsList;
     }
 
     // DAO to update client

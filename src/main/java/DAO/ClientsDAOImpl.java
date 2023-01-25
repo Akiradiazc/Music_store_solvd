@@ -18,7 +18,7 @@ public class ClientsDAOImpl implements IClientsDAO{
         Statement statement = null;
         Connection connection = null;
 
-        String sql = "INSERT INTO Clients VALUES ('"+clients.getFirst_name()+"','"+clients.getLast_name()+"','"+clients.getAddress()+"','"+clients.getBirthdate()+"')";
+        String sql = "INSERT INTO Clients (First_name, Last_name, Address, Birthdate) VALUES ('"+clients.getFirst_name()+"','"+clients.getLast_name()+"','"+clients.getAddress()+"','"+clients.getBirthdate()+"')";
 
         try{
             connection = ConnectionClass.connect();
@@ -74,7 +74,7 @@ public class ClientsDAOImpl implements IClientsDAO{
         Connection connection = null;
         Statement statement = null;
         boolean update = false;
-        String sql = "UPDATE Clients SET First_name="+clients.getFirst_name()+"', Last_name='"+clients.getLast_name()+"', Address='"+clients.getAddress()+"', Birthdate='"+clients.getBirthdate()+"' WHERE IdClients ='"+clients.getIdClients();
+        String sql = "UPDATE Clients SET First_name='"+clients.getFirst_name()+"', Last_name='"+clients.getLast_name()+"', Address='"+clients.getAddress()+"', Birthdate='"+clients.getBirthdate()+"' WHERE IdClients = "+clients.getIdClients();
 
         try {
             connection = ConnectionClass.connect();
