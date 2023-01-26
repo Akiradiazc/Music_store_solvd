@@ -85,7 +85,6 @@ public class ClientsDAOImpl implements IClientsDAO{
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
 
-
             while(resultSet.next()){
                 clientById.setIdClients(resultSet.getInt(1));
                 clientById.setFirst_name(resultSet.getString(2));
