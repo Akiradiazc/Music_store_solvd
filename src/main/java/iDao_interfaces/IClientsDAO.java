@@ -5,10 +5,14 @@ import Model.Clients;
 import java.util.List;
 
 public interface IClientsDAO {
-
-    public boolean create (Clients clients);
-    public List<Clients> read();
-    public boolean update(Clients clients);
-    public boolean delete(Clients clients);
+    // ------ CREATE
+    boolean create (Clients clients);
+    // ------ READ
+    List<Clients> read();
+    Clients getClientById(int idClient);
+    // ------ UPDATE
+    boolean update(Clients clients);
+    // ------ DELETE
+    boolean delete(Clients clients);
 
 }

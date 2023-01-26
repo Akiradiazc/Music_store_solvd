@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="First CRUD statements for Clients">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="CRUD statements for Clients table working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ClientsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ClientsDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ClientsDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/CRUD_demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/CRUD_demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674600504064</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CRUD statements for Clients table working">
+      <created>1674677138586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674677138586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,7 +90,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First CRUD statements for Clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="First CRUD statements for Clients" />
+    <MESSAGE value="CRUD statements for Clients table working" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD statements for Clients table working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

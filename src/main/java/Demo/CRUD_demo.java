@@ -20,8 +20,10 @@ public class CRUD_demo {
         controller.create(clientCreate);
 
         //-------- READ clients
-        // Prints all clients in DB and assigns them to a ClientsList
+            // Prints all clients in DB and assigns them to a ClientsList
         List<Clients> ClientsListDB = controller.readClients();
+            // Prints an specific client from a given idClient (idClients-1)
+        controller.getClientById(3);
 
 
         //-------- UPDATE client

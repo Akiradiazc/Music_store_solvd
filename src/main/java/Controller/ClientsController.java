@@ -29,6 +29,14 @@ public class ClientsController {
         return clientsList;
     }
 
+    public Clients getClientById(int idClients){
+        Clients clientById = new Clients();
+        IClientsDAO dao = new ClientsDAOImpl();
+        clientById = dao.getClientById(idClients);
+        view.viewClients(clientById);
+        return clientById;
+    }
+
     // DAO to update client
     public void update(Clients clients){
         IClientsDAO dao = new ClientsDAOImpl();

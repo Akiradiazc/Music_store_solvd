@@ -70,6 +70,40 @@ public class ClientsDAOImpl implements IClientsDAO{
     }
 
     @Override
+    public Clients getClientById(int idClient) {
+        //sql
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        String sql = "SELECT * FROM Clients WHERE idClients = " + idClient;
+
+        Clients clientById = new Clients();
+
+        try{
+            connection = ConnectionClass.connect();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql);
+
+
+            while(resultSet.next()){
+                clientById.setIdClients(resultSet.getInt(1));
+                clientById.setFirst_name(resultSet.getString(2));
+                clientById.setLast_name(resultSet.getString(3));
+                clientById.setAddress(resultSet.getString(4));
+                clientById.setBirthdate(resultSet.getDate(5));
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch(SQLException e){
+            System.out.println("Error ClientDaoImpl class, READ (byId)method");
+            e.printStackTrace();
+        }
+        return clientById;
+    }
+
+    @Override
     public boolean update(Clients clients) {
         Connection connection = null;
         Statement statement = null;
