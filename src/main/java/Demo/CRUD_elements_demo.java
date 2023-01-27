@@ -12,6 +12,7 @@ public class CRUD_elements_demo {
         Paying_methodController payingMethodController = new Paying_methodController();
         CityController cityController = new CityController();
         ArtistsController artistsController = new ArtistsController();
+        StoreController storeController = new StoreController();
 
         // -----   CREATE ELEMENTS
         // +++ Creating all elements to insert
@@ -21,6 +22,8 @@ public class CRUD_elements_demo {
         //Paying_method paypal = new Paying_method("PayPal");
         //City Bangkok = new City("Bangkok", "Thailand");
         //Artist Lisa = new Artist("Lisa", "Thailand");
+        //Store store1 = new Store("Short Street 33", "Tokyo");
+
         // +++ Inserting elements created
         //countryController.create(Thailand);
         //genreController.create(kpop);
@@ -28,14 +31,18 @@ public class CRUD_elements_demo {
         //payingMethodController.create(paypal);
         //cityController.create(Bangkok);
         //artistsController.create(Lisa);
+        //storeController.create(store1);
 
         // -----    READ ELEMENTS
-        countryController.getAllCountriesList();
-        genreController.getAllGenresList();
-        languagesController.getAllLanguagesList();
-        payingMethodController.getAllPayingMethodsList();
-        cityController.getAllCitiesList();
-        artistsController.getArtistsByName("Wee");
+        //countryController.getAllCountriesList();
+        //genreController.getAllGenresList();
+        //languagesController.getAllLanguagesList();
+        //payingMethodController.getAllPayingMethodsList();
+        //cityController.getAllCitiesList();
+        //artistsController.getArtistsByName("Wee");
+        //storeController.getStoreById(2);
+
+
         // -----    UPDATE ELEMENTS
         //Artist artistUpdate = artistsController.getArtistById(5);
         //artistUpdate.setName("Lisa");
