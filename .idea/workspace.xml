@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added other tables to implment CRUD statements">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added CRUD statements for additional tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Paying_method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Paying_method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ArtistsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ArtistsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/CRUD_elements_demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/CRUD_elements_demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Artist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674782913178</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added CRUD statements for additional tables">
+      <created>1674802517293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674802517293</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +133,8 @@
     <MESSAGE value="CRUD statements for Employees table added" />
     <MESSAGE value="DB properties file added" />
     <MESSAGE value="Added other tables to implment CRUD statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added other tables to implment CRUD statements" />
+    <MESSAGE value="Added CRUD statements for additional tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CRUD statements for additional tables" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
