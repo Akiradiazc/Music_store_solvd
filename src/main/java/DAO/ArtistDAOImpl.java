@@ -128,6 +128,37 @@ public class ArtistDAOImpl implements IArtistDAO {
     }
 
     @Override
+    public List<Artist> getArtistByName(String name) {
+        //sql
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        String sql = "SELECT * FROM Artists WHERE Artists.Name LIKE '%"+ name +"%'";
+        List<Artist> ArtistsList = new ArrayList<>();
+        try {
+            connection = ConnectionClass.connect();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                Artist artist = new Artist();
+                artist.setIdArtists(resultSet.getInt(1));
+                artist.setName(resultSet.getString(2));
+                artist.setCountry_id_fk(resultSet.getInt(3));
+                ArtistsList.add(artist);
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException e){
+            System.out.println("Error ArtistDaoImpl class, READ (getArtistsByName) method");
+            e.printStackTrace();
+        }
+        return ArtistsList;
+    }
+
+    @Override
     public boolean update(Artist artist) {
         Connection connection = null;
         Statement statement = null;

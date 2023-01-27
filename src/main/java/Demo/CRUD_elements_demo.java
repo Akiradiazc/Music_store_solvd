@@ -35,11 +35,11 @@ public class CRUD_elements_demo {
         languagesController.getAllLanguagesList();
         payingMethodController.getAllPayingMethodsList();
         cityController.getAllCitiesList();
-        artistsController.getAllArtistsList();
+        artistsController.getArtistsByName("Wee");
         // -----    UPDATE ELEMENTS
-        Artist artistUpdate = artistsController.getArtistById(5);
-        artistUpdate.setName("Lisa");
-        artistsController.update(artistUpdate);
-        artistsController.getAllArtistsList();
+        //Artist artistUpdate = artistsController.getArtistById(5);
+        //artistUpdate.setName("Lisa");
+        //artistsController.update(artistUpdate);
+        //artistsController.getAllArtistsList();
     }
 }

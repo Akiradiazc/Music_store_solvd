@@ -11,6 +11,7 @@ public interface IArtistDAO {
     List<Artist> getAllArtists();
     List<Artist> getArtistsByCountry(String Country_name_fk);
     Artist getArtistById(int idArtist);
+    List<Artist> getArtistByName(String name);
 
     // ------ UPDATE
     boolean update(Artist artist);

@@ -44,6 +44,14 @@ public class ArtistsController {
         return artistById;
     }
 
+    public List<Artist> getArtistsByName(String name){
+        List<Artist> ArtistsList = new ArrayList<>();
+        IArtistDAO dao = new ArtistDAOImpl();
+        ArtistsList = dao.getArtistByName(name);
+        view.ViewArtist(ArtistsList);
+        return ArtistsList;
+    }
+
     // --------- DAO to UPDATE employee
     public void update(Artist artist){
         IArtistDAO dao = new ArtistDAOImpl();
