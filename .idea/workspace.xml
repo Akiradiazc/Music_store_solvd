@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="CRUD statements for Employees table added">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="DB properties file added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectionClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/CRUD_employee_demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/CRUD_employee_demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674768654137</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DB properties file added">
+      <created>1674778623060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674778623060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,7 +115,8 @@
     <MESSAGE value="CRUD statements for Clients table working" />
     <MESSAGE value="CRUD statements for Clients table mods" />
     <MESSAGE value="CRUD statements for Employees table added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD statements for Employees table added" />
+    <MESSAGE value="DB properties file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB properties file added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
