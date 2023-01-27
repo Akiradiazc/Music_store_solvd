@@ -1,15 +1,32 @@
 package Connection;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.*;
+import java.util.Properties;
 
 public class ConnectionClass {
     public static Connection connect(){
-        String url = "jdbc:mysql://localhost:3306/music_store_solvd?serverTimezone=UTC";
-        String username = "root";
-        String password = "akiretioN27#";
-        Connection connection = null;
 
-        //System.out.println("INSERT INTO Clients VALUES (NULL,"+"David"+"','"+"Diaz"+"','"+"Street 456"+"','"+"1999-02-27"+"')'");
+        String url = new String();
+        String username = new String();
+        String password = new String();
+
+        try(InputStream input = ConnectionClass.class.getClassLoader().getResourceAsStream("db.properties")){
+            Properties properties = new Properties();
+            if(input == null){
+                System.out.println("Unable to access DB properties file");
+            }
+            properties.load(input);
+            username = properties.getProperty("db.user");
+            password = properties.getProperty("db.password");
+            url = properties.getProperty("db.url");
+
+        } catch(IOException e){
+            e.printStackTrace();
+        }
+
+        Connection connection = null;
 
         try{
             connection = DriverManager.getConnection(url, username, password);

@@ -16,7 +16,7 @@ public class CRUD_employee_demo {
         //-------- CREATE an employee
         //      Create a new employee to put in DB || Through get/set or constructor
         //Employee employeeCreate = new Employee();
-        Employee employeeCreate = new Employee("Drake", "Bell", "Long Street 23", Date.valueOf("1990-10-20"), 1);
+        Employee employeeCreate = new Employee("Josh", "Nichols", "Long Street 23", Date.valueOf("1990-10-21"), 1);
         //      Puts Created Employee into the DB
         employeesController.create(employeeCreate);
 
