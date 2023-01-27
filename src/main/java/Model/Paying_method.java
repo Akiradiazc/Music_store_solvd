@@ -3,8 +3,8 @@ package Model;
 public class Paying_method {
     private int idPaying_method;
     private String Paying_method_name;
-    Paying_method(){}
-    Paying_method(String Paying_method_name){
+    public Paying_method(){}
+    public Paying_method(String Paying_method_name){
         this.idPaying_method = idPaying_method;
         this.Paying_method_name = Paying_method_name;
     }

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="DB properties file added">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added other tables to implment CRUD statements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Paying_method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Paying_method.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674778623060</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added other tables to implment CRUD statements">
+      <created>1674782913178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674782913178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +123,8 @@
     <MESSAGE value="CRUD statements for Clients table mods" />
     <MESSAGE value="CRUD statements for Employees table added" />
     <MESSAGE value="DB properties file added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB properties file added" />
+    <MESSAGE value="Added other tables to implment CRUD statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added other tables to implment CRUD statements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
