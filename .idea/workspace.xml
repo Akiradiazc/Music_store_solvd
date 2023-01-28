@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added getByArtistName likeness method">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added Store table implementations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Demo/CRUD_elements_demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/CRUD_elements_demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Album.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674810462114</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Store table implementations">
+      <created>1674849499626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674849499626</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +156,8 @@
     <MESSAGE value="Added CRUD statements for additional tables" />
     <MESSAGE value="Added new tables implementations with CRUD statements" />
     <MESSAGE value="Added getByArtistName likeness method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getByArtistName likeness method" />
+    <MESSAGE value="Added Store table implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Store table implementations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
