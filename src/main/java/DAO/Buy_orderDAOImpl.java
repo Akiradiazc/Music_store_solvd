@@ -7,6 +7,7 @@ import iDao_interfaces.IBuy_orderDAO;
 import java.sql.Connection;
 import Connection.ConnectionClass;
 
+import javax.swing.plaf.nimbus.State;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -17,24 +18,47 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
     @Override
     public boolean create(Buy_order buy_order) {
         boolean create = false;
+        boolean StockAvailable = false;
 
         //Sql
         Statement statement = null;
+        Statement statement2 = null;
         Connection connection = null;
+        Connection connection2 = null;
 
-        String columnNames = "(Albums_id_fk, Quantity)";
-        String AlbumSelect = "(SELECT idAlbum FROM Albums WHERE Album_name= "+buy_order.getAlbum_name_fk()+"')";
-        String sql = "INSERT INTO Buy_order " + columnNames + " VALUES (" + AlbumSelect +","+ buy_order.getQuantity()+")";
+
+        // SQL PREPROCESS STOCK VERIFICATION
+        ResultSet resultQ = null;
+        String StockPull = "SELECT Quantity FROM Stock INNER JOIN Albums ON Stock.Albums_id_fk=albums.idAlbum WHERE Album_name = "+buy_order.getAlbum_name_fk();
         try{
-            connection = ConnectionClass.connect();
-            statement = connection.createStatement();
-            statement.execute(sql);
-            create=true;
-            statement.close();
-            connection.close();
+            connection2 = ConnectionClass.connect();
+            statement2 = connection2.createStatement();
+            resultQ = statement2.executeQuery(StockPull);
+            if(resultQ.getInt(1)>=buy_order.getQuantity()){
+                StockAvailable = true;
+            } else {
+                System.out.println("Item out of Stock");
+            }
         } catch(SQLException e){
-            System.out.println("Error: Buy_orderDaoImpl class, CREATE method");
+            System.out.println("Error: Stock not reached");
             e.printStackTrace();
+        }
+
+        if(StockAvailable) {
+            String columnNames = "(Albums_id_fk, Quantity)";
+            String AlbumSelect = "(SELECT idAlbum FROM Albums WHERE Album_name= " + buy_order.getAlbum_name_fk() + "')";
+            String sql = "INSERT INTO Buy_order " + columnNames + " VALUES (" + AlbumSelect + "," + buy_order.getQuantity() + ")";
+            try {
+                connection = ConnectionClass.connect();
+                statement = connection.createStatement();
+                statement.execute(sql);
+                create = true;
+                statement.close();
+                connection.close();
+            } catch (SQLException e) {
+                System.out.println("Error: Buy_orderDaoImpl class, CREATE method");
+                e.printStackTrace();
+            }
         }
         return create;
     }

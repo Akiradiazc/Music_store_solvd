@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added Album table implementations">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added final tables and their CRUD statements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Buy_orderDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Buy_orderDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674868036161</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added final tables and their CRUD statements">
+      <created>1675304894564</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675304894564</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +171,8 @@
     <MESSAGE value="Added getByArtistName likeness method" />
     <MESSAGE value="Added Store table implementations" />
     <MESSAGE value="Added Album table implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Album table implementations" />
+    <MESSAGE value="Added final tables and their CRUD statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added final tables and their CRUD statements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
