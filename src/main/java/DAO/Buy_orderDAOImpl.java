@@ -18,48 +18,25 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
     @Override
     public boolean create(Buy_order buy_order) {
         boolean create = false;
-        boolean StockAvailable = false;
-
         //Sql
         Statement statement = null;
-        Statement statement2 = null;
         Connection connection = null;
-        Connection connection2 = null;
 
-
-        // SQL PREPROCESS STOCK VERIFICATION
-        ResultSet resultQ = null;
-        String StockPull = "SELECT Quantity FROM Stock INNER JOIN Albums ON Stock.Albums_id_fk=albums.idAlbum WHERE Album_name = "+buy_order.getAlbum_name_fk();
-        try{
-            connection2 = ConnectionClass.connect();
-            statement2 = connection2.createStatement();
-            resultQ = statement2.executeQuery(StockPull);
-            if(resultQ.getInt(1)>=buy_order.getQuantity()){
-                StockAvailable = true;
-            } else {
-                System.out.println("Item out of Stock");
-            }
-        } catch(SQLException e){
-            System.out.println("Error: Stock not reached");
+        String columnNames = "(Albums_id_fk, Quantity, Store_id_fk)";
+        String AlbumSelect = "(SELECT idAlbum FROM Albums WHERE Album_name= '" + buy_order.getAlbum_name_fk() + "')";
+        String sql = "INSERT INTO Buy_order " + columnNames + " VALUES (" + AlbumSelect + "," + buy_order.getQuantity() + "," + buy_order.getStore_id_fk() + ")";
+        try {
+            connection = ConnectionClass.connect();
+            statement = connection.createStatement();
+            statement.execute(sql);
+            create = true;
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            System.out.println("Error: Buy_orderDaoImpl class, CREATE method");
             e.printStackTrace();
         }
 
-        if(StockAvailable) {
-            String columnNames = "(Albums_id_fk, Quantity)";
-            String AlbumSelect = "(SELECT idAlbum FROM Albums WHERE Album_name= " + buy_order.getAlbum_name_fk() + "')";
-            String sql = "INSERT INTO Buy_order " + columnNames + " VALUES (" + AlbumSelect + "," + buy_order.getQuantity() + ")";
-            try {
-                connection = ConnectionClass.connect();
-                statement = connection.createStatement();
-                statement.execute(sql);
-                create = true;
-                statement.close();
-                connection.close();
-            } catch (SQLException e) {
-                System.out.println("Error: Buy_orderDaoImpl class, CREATE method");
-                e.printStackTrace();
-            }
-        }
         return create;
     }
 
@@ -82,6 +59,7 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
                 buy_order.setIdBuy_order(resultSet.getInt(1));
                 buy_order.setAlbum_id_fk(resultSet.getInt(2));
                 buy_order.setQuantity(resultSet.getInt(3));
+                buy_order.setStore_id_fk(resultSet.getInt(4));
                 BuyOrderList.add(buy_order);
             }
             resultSet.close();
@@ -102,7 +80,7 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
         ResultSet resultSet = null;
 
         String join = "Buy_order INNER JOIN albums ON Buy_order.Albums_id_fk = albums.idAlbum";
-        String Columns ="idBuy_order, Albums_id_fk, Quantity";
+        String Columns ="idBuy_order, Albums_id_fk, Quantity, Store_id_fk";
         String sql = "SELECT "+ Columns+ " FROM "+join+" WHERE Album_name= '"+album_name_fk+"'";
         List<Buy_order> BuyOrderList = new ArrayList<>();
         try {
@@ -115,6 +93,7 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
                 buy_order.setIdBuy_order(resultSet.getInt(1));
                 buy_order.setAlbum_id_fk(resultSet.getInt(2));
                 buy_order.setQuantity(resultSet.getInt(3));
+                buy_order.setStore_id_fk(resultSet.getInt(4));
                 BuyOrderList.add(buy_order);
             }
             resultSet.close();
@@ -122,6 +101,39 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
             connection.close();
         } catch (SQLException e){
             System.out.println("Error BuyOrderDaoImpl class, READ (getByAlbumId) method");
+            e.printStackTrace();
+        }
+        return BuyOrderList;
+    }
+
+    @Override
+    public List<Buy_order> getBuyOrdersByStoreId(int Store_id_fk) {
+        //sql
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        String Columns ="idBuy_order, Albums_id_fk, Quantity, Store_id_fk";
+        String sql = "SELECT "+ Columns+ " FROM Buy_order WHERE Store_id_fk= '"+Store_id_fk;
+        List<Buy_order> BuyOrderList = new ArrayList<>();
+        try {
+            connection = ConnectionClass.connect();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                Buy_order buy_order = new Buy_order();
+                buy_order.setIdBuy_order(resultSet.getInt(1));
+                buy_order.setAlbum_id_fk(resultSet.getInt(2));
+                buy_order.setQuantity(resultSet.getInt(3));
+                buy_order.setStore_id_fk(resultSet.getInt(4));
+                BuyOrderList.add(buy_order);
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException e){
+            System.out.println("Error BuyOrderDaoImpl class, READ (getByStoreId) method");
             e.printStackTrace();
         }
         return BuyOrderList;
@@ -145,6 +157,7 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
                 buy_order.setIdBuy_order(resultSet.getInt(1));
                 buy_order.setAlbum_id_fk(resultSet.getInt(2));
                 buy_order.setQuantity(resultSet.getInt(3));
+                buy_order.setStore_id_fk(resultSet.getInt(4));
             }
             resultSet.close();
             statement.close();
@@ -161,7 +174,7 @@ public class Buy_orderDAOImpl implements IBuy_orderDAO {
         Connection connection = null;
         Statement statement = null;
         boolean update = false;
-        String sql = "UPDATE Buy_order SET Albums_id_fk= '"+ buy_order.getAlbum_id_fk()+"', Quantity= "+buy_order.getQuantity()+";";
+        String sql = "UPDATE Buy_order SET Albums_id_fk= '"+ buy_order.getAlbum_id_fk()+"', Quantity= "+buy_order.getQuantity()+", Store_id_fk= "+buy_order.getStore_id_fk();
         try {
             connection = ConnectionClass.connect();
             statement = connection.createStatement();

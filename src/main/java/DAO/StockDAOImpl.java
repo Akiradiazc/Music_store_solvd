@@ -114,7 +114,7 @@ public class StockDAOImpl implements IStockDAO {
 
         String Columns = "idStock, Quantity, Albums_id_fk, Store_id_fk";
         String Joins = "INNER JOIN albums ON Stock.Albums_id_fk=albums.idAlbum";
-        String sql = "SELECT "+Columns+" FROM Stock "+Joins+" WHERE Album_name= "+Album_name_fk;
+        String sql = "SELECT "+Columns+" FROM Stock "+Joins+" WHERE Album_name= '"+Album_name_fk+"'";
         List<Stock> StockList = new ArrayList<>();
         try {
             connection = ConnectionClass.connect();
@@ -205,11 +205,42 @@ public class StockDAOImpl implements IStockDAO {
     }
 
     @Override
+    public Stock getStockByStoreAndAlbumName(int Store_id_fk, String Album_name_fk) {
+        //sql
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        String selectAlbum = "(SELECT idAlbum FROM Albums WHERE Album_name= '"+Album_name_fk+ "')";
+        String sql = "SELECT * FROM Stock WHERE Albums_id_fk= "+selectAlbum+" && Store_id_fk= "+Store_id_fk;
+        Stock stock = new Stock();
+        try {
+            connection = ConnectionClass.connect();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                stock.setIdStock(resultSet.getInt(1));
+                stock.setQuantity(resultSet.getInt(2));
+                stock.setAlbum_id_fk(resultSet.getInt(3));
+                stock.setStore_id_fk(resultSet.getInt(4));
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException e){
+            System.out.println("Error StockDaoImpl class, READ (getStockByStoreAndAlbumName) method");
+            e.printStackTrace();
+        }
+        return stock;
+    }
+
+    @Override
     public boolean update(Stock stock) {
         Connection connection = null;
         Statement statement = null;
         boolean update = false;
-        String sql = "UPDATE Stock SET Quantity= "+ stock.getQuantity()+", Albums_id_fk= "+stock.getAlbum_id_fk()+", Store_id_fk= "+stock.getStore_id_fk();
+        String sql = "UPDATE Stock SET Quantity= "+ stock.getQuantity()+", Albums_id_fk= "+stock.getAlbum_id_fk()+", Store_id_fk= "+stock.getStore_id_fk()+ " WHERE idStock=  "+stock.getIdStock();
         try {
             connection = ConnectionClass.connect();
             statement = connection.createStatement();

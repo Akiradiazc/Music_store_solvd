@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added final tables and their CRUD statements">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added stock use to buy_order create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/BillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Buy_orderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Buy_orderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/BillDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/BillDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Buy_orderDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Buy_orderDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/StockDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/StockDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/CRUD_elements_demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/CRUD_elements_demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Buy_order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Buy_order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IBillDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IBillDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IBuy_orderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IBuy_orderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IStockDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IStockDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675304894564</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added stock use to buy_order create">
+      <created>1675306965099</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675306965099</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +190,8 @@
     <MESSAGE value="Added Store table implementations" />
     <MESSAGE value="Added Album table implementations" />
     <MESSAGE value="Added final tables and their CRUD statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added final tables and their CRUD statements" />
+    <MESSAGE value="Added stock use to buy_order create" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added stock use to buy_order create" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

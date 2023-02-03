@@ -9,6 +9,7 @@ public interface IBuy_orderDAO {
     // --- READ
     List<Buy_order> getAllBuyOrders();
     List<Buy_order> getBuyOrderByAlbumId(String album_name_fk);
+    List<Buy_order> getBuyOrdersByStoreId(int Store_id_fk);
     Buy_order getBuyOrderById(int idBuy_order);
     // --- UPDATE
     boolean update(Buy_order buy_order);

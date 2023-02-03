@@ -26,7 +26,7 @@ public class BillDAOImpl implements IBillDAO {
         String PayingMethodSelect = "(SELECT idPaying_method FROM Paying_method WHERE Paying_method_name= )"+bill.getPaying_method_name_fk();
 
         String sql = "INSERT INTO Stock " + columnNames + " VALUES ("+ bill.getDate() +", "+bill.getBuy_order_id_fk() +
-                ", "+bill.getClients_id_fk() +", "+bill.getStore_id_fk() +", "+
+                ", "+bill.getClients_id_fk() +
                 bill.getEmployees_id_fk() +", "+
                 PayingMethodSelect +")";
         try{
@@ -63,9 +63,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
                 BillList.add(bill);
             }
             resultSet.close();
@@ -98,9 +97,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
                 BillList.add(bill);
             }
             resultSet.close();
@@ -133,9 +131,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
                 BillList.add(bill);
             }
             resultSet.close();
@@ -143,41 +140,6 @@ public class BillDAOImpl implements IBillDAO {
             connection.close();
         } catch (SQLException e){
             System.out.println("Error BillDaoImpl class, READ (getByClient) method");
-            e.printStackTrace();
-        }
-        return BillList;
-    }
-
-    @Override
-    public List<Bill> getBillByStore(int Store_id_fk) {
-        //sql
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
-
-        String sql = "SELECT * FROM Bill WHERE Store_id_fk= "+ Store_id_fk;
-        List<Bill> BillList = new ArrayList<>();
-        try {
-            connection = ConnectionClass.connect();
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery(sql);
-
-            while (resultSet.next()) {
-                Bill bill = new Bill();
-                bill.setIdBill(resultSet.getInt(1));
-                bill.setDate(resultSet.getDate(2));
-                bill.setBuy_order_id_fk(resultSet.getInt(3));
-                bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
-                BillList.add(bill);
-            }
-            resultSet.close();
-            statement.close();
-            connection.close();
-        } catch (SQLException e){
-            System.out.println("Error BillDaoImpl class, READ (getByStore) method");
             e.printStackTrace();
         }
         return BillList;
@@ -203,9 +165,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
                 BillList.add(bill);
             }
             resultSet.close();
@@ -240,9 +201,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
                 BillList.add(bill);
             }
             resultSet.close();
@@ -274,9 +234,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
             }
             resultSet.close();
             statement.close();
@@ -307,9 +266,8 @@ public class BillDAOImpl implements IBillDAO {
                 bill.setDate(resultSet.getDate(2));
                 bill.setBuy_order_id_fk(resultSet.getInt(3));
                 bill.setClients_id_fk(resultSet.getInt(4));
-                bill.setStore_id_fk(resultSet.getInt(5));
-                bill.setEmployees_id_fk(resultSet.getInt(6));
-                bill.setPaying_method_id_fk(resultSet.getInt(7));
+                bill.setEmployees_id_fk(resultSet.getInt(5));
+                bill.setPaying_method_id_fk(resultSet.getInt(6));
             }
             resultSet.close();
             statement.close();
@@ -328,7 +286,6 @@ public class BillDAOImpl implements IBillDAO {
         boolean update = false;
         String sql = "UPDATE Bill SET Date= "+ bill.getDate()+", Buy_order_id_fk= "+bill.getBuy_order_id_fk()+
                 ", Clients_id_fk= "+bill.getClients_id_fk()+
-                ", Store_id_fk= "+bill.getStore_id_fk()+
                 ", Employees_id_fk= "+bill.getEmployees_id_fk()+
                 ", Paying_method_id_fk= "+bill.getPaying_method_id_fk();
         try {

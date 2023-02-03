@@ -12,7 +12,6 @@ public interface IBillDAO {
     List<Bill> getAllBill();
     List<Bill> getBillByDate(Date date);
     List<Bill> getBillByClient(int Client_id_fk);
-    List<Bill> getBillByStore(int Store_id_fk);
     List<Bill> getBillByEmployee(int Employee_id_fk);
     List<Bill> getBillByPayingMethod(String PayingMethod_name_fk);
     Bill getBillById(int idBill);

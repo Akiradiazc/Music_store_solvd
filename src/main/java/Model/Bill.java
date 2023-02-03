@@ -7,28 +7,25 @@ public class Bill {
     private Date date;
     private int buy_order_id_fk;
     private int Clients_id_fk;
-    private int Store_id_fk;
     private int Employees_id_fk;
     private int Paying_method_id_fk;
     private String Paying_method_name_fk;
 
     public Bill(){}
 
-    public Bill(Date date, int buy_order_id_fk, int clients_id_fk, int store_id_fk, int employees_id_fk, int paying_method_id_fk) {
+    public Bill(Date date, int buy_order_id_fk, int clients_id_fk, int employees_id_fk, int paying_method_id_fk) {
         this.idBill = idBill;
         this.date = date;
         this.buy_order_id_fk = buy_order_id_fk;
         Clients_id_fk = clients_id_fk;
-        Store_id_fk = store_id_fk;
         Employees_id_fk = employees_id_fk;
         Paying_method_id_fk = paying_method_id_fk;
     }
-    public Bill(Date date, int buy_order_id_fk, int clients_id_fk, int store_id_fk, int employees_id_fk, String paying_method_name_fk) {
+    public Bill(Date date, int buy_order_id_fk, int clients_id_fk, int employees_id_fk, String paying_method_name_fk) {
         this.idBill = idBill;
         this.date = date;
         this.buy_order_id_fk = buy_order_id_fk;
         Clients_id_fk = clients_id_fk;
-        Store_id_fk = store_id_fk;
         Employees_id_fk = employees_id_fk;
         Paying_method_name_fk = paying_method_name_fk;
     }
@@ -65,14 +62,6 @@ public class Bill {
         Clients_id_fk = clients_id_fk;
     }
 
-    public int getStore_id_fk() {
-        return Store_id_fk;
-    }
-
-    public void setStore_id_fk(int store_id_fk) {
-        Store_id_fk = store_id_fk;
-    }
-
     public int getEmployees_id_fk() {
         return Employees_id_fk;
     }
@@ -104,7 +93,6 @@ public class Bill {
                 ", date=" + date +
                 ", buy_order_id_fk=" + buy_order_id_fk +
                 ", Clients_id_fk=" + Clients_id_fk +
-                ", Store_id_fk=" + Store_id_fk +
                 ", Employees_id_fk=" + Employees_id_fk +
                 ", Paying_method_id_fk=" + Paying_method_id_fk +
                 '}';

@@ -39,13 +39,6 @@ public class BillController {
         view.ViewBills(BillList);
         return BillList;
     }
-    public List<Bill> getBillByStore(int Store_id_fk){
-        List<Bill> BillList = new ArrayList<>();
-        IBillDAO dao = new BillDAOImpl();
-        BillList = dao.getBillByStore(Store_id_fk);
-        view.ViewBills(BillList);
-        return BillList;
-    }
     public List<Bill> getBillByEmployee(int Employee_id_fk){
         List<Bill> BillList = new ArrayList<>();
         IBillDAO dao = new BillDAOImpl();

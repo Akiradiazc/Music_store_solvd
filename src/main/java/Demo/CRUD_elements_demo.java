@@ -14,6 +14,8 @@ public class CRUD_elements_demo {
         ArtistsController artistsController = new ArtistsController();
         StoreController storeController = new StoreController();
         AlbumController albumController = new AlbumController();
+        StockController stockController = new StockController();
+        Buy_orderController buyOrderController = new Buy_orderController();
 
         // -----   CREATE ELEMENTS
         // +++ Creating all elements to insert
@@ -25,6 +27,7 @@ public class CRUD_elements_demo {
         //Artist Lisa = new Artist("Lisa", "Thailand");
         //Store store1 = new Store("Short Street 33", "Tokyo");
         //Album weeknd3 = new Album("Kiss Land", 2013, (float) 110.99, "The Weeknd", "R&B", "English");
+        Buy_order buyOrder1 = new Buy_order("Romance", 1, 1);
 
 
         // +++ Inserting elements created
@@ -36,6 +39,7 @@ public class CRUD_elements_demo {
         //artistsController.create(Lisa);
         //storeController.create(store1);
         //albumController.create(weeknd3);
+        buyOrderController.create(buyOrder1);
 
 
         // -----    READ ELEMENTS
@@ -47,6 +51,7 @@ public class CRUD_elements_demo {
         //artistsController.getArtistsByName("Wee");
         //storeController.getStoreById(2);
         //albumController.getAlbumsByGenre("Jpop");
+        stockController.getAllStock();
 
 
         // -----    UPDATE ELEMENTS
