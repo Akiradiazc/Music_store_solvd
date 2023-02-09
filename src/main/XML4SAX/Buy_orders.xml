@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Buy_orders>
+    <Buy_order id ="1">
+        <Album_id_fk>5</Album_id_fk>
+        <Quantity>20</Quantity>
+        <Store_id_fk>1</Store_id_fk>
+    </Buy_order>
+    <Buy_order id ="2">
+        <Album_id_fk>4</Album_id_fk>
+        <Quantity>2</Quantity>
+        <Store_id_fk>1</Store_id_fk>
+    </Buy_order>
+</Buy_orders>

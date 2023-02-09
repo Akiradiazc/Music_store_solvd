@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Fixed date in xml handling">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added Artists table for xml handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Demo/xmlTEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/xmlTEST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/XML_handlers/ArtistHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XML_handlers/ArtistHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/XML_handlers/EmployeeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XML_handlers/EmployeeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/XML4SAX/Employees.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675908154064</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added Artists table for xml handling">
+      <created>1675922588121</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675922588121</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +233,8 @@
     <MESSAGE value="Added xml handling" />
     <MESSAGE value="Fixed xml handling" />
     <MESSAGE value="Fixed date in xml handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed date in xml handling" />
+    <MESSAGE value="Added Artists table for xml handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Artists table for xml handling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

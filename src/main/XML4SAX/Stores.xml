@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Stores>
+    <Store id ="1">
+        <Address>Right Street #456</Address>
+        <City_id_fk>3</City_id_fk>
+    </Store>
+    <Store id="2">
+        <Address>Left Street #333</Address>
+        <City_id_fk>4</City_id_fk>
+    </Store>
+</Stores>

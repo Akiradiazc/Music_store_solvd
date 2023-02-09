@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Clients>
+    <Client id ="1">
+        <First_name>Francisco</First_name>
+        <Last_name>Perez</Last_name>
+        <Address>Long Street #456</Address>
+        <Birthdate>1992-07-24</Birthdate>
+    </Client>
+    <Client id="2">
+        <First_name>Jordan</First_name>
+        <Last_name>Poole</Last_name>
+        <Address>Short Street #333</Address>
+        <Birthdate>1997-08-24</Birthdate>
+    </Client>
+</Clients>
