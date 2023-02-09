@@ -40,7 +40,7 @@ public class EmployeeHandler extends DefaultHandler {
             String id = attributes.getValue("id");
 
             // initialize Employee object and set id attribute
-            Employee employee = new Employee();
+            employee = new Employee();
             employee.setIdEmployees(Integer.parseInt(id));
             // initialize list
             if (employeeList == null)
@@ -64,18 +64,23 @@ public class EmployeeHandler extends DefaultHandler {
     public void endElement(String uri, String localName, String qName) throws SAXException {
         if (bFirst_name){
             employee.setFirst_name(data.toString());
+            bFirst_name = false;
         } else if (bLast_name) {
             employee.setLast_name(data.toString());
+            bLast_name = false;
         } else if (bAddress) {
             employee.setAddress(data.toString());
+            bAddress = false;
         } else if (bBirthdate) {
             try {
                 employee.setBirthdate(formatter.parse(data.toString()));
+                bBirthdate = false;
             } catch (ParseException e) {
                 throw new RuntimeException(e);
             }
         } else if (bStore_id_fk){
             employee.setStore_id_fk(Integer.parseInt(data.toString()));
+            bStore_id_fk = false;
         }
         if (qName.equalsIgnoreCase("Employee")) {
             // add Employee object to list

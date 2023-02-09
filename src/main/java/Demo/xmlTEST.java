@@ -21,7 +21,7 @@ public class xmlTEST {
         try{
             SAXParser saxParser = saxParserFactory.newSAXParser();
             EmployeeHandler employeeHandler = new EmployeeHandler();
-            saxParser.parse(new File(""), employeeHandler);
+            saxParser.parse(new File("test.xml"), employeeHandler);
             //Get Employees list
             List<Employee> employeeList = employeeHandler.getEmployeeList();
             //print employee information
