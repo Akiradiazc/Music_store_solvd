@@ -2,11 +2,9 @@ package XML_handlers;
 
 import Model.Employee;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Locale;
+
 import java.sql.Date;
 
 import org.xml.sax.Attributes;
@@ -19,8 +17,6 @@ public class EmployeeHandler extends DefaultHandler {
     private List<Employee> employeeList = null;
     private Employee employee = null;
     private StringBuilder data = null;
-
-    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
     // getter method for employee list
     public List<Employee> getEmployeeList() {
