@@ -4,10 +4,10 @@ import Model.Employee;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.sql.Date;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -20,7 +20,7 @@ public class EmployeeHandler extends DefaultHandler {
     private Employee employee = null;
     private StringBuilder data = null;
 
-    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
     // getter method for employee list
     public List<Employee> getEmployeeList() {
@@ -72,12 +72,8 @@ public class EmployeeHandler extends DefaultHandler {
             employee.setAddress(data.toString());
             bAddress = false;
         } else if (bBirthdate) {
-            try {
-                employee.setBirthdate(formatter.parse(data.toString()));
-                bBirthdate = false;
-            } catch (ParseException e) {
-                throw new RuntimeException(e);
-            }
+            employee.setBirthdate(Date.valueOf(data.toString()));
+            bBirthdate = false;
         } else if (bStore_id_fk){
             employee.setStore_id_fk(Integer.parseInt(data.toString()));
             bStore_id_fk = false;
