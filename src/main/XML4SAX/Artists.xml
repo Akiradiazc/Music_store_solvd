@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Artists>
+    <Artist id ="1">
+        <Name>Machine Gun Kelly</Name>
+        <Country_id_fk>1</Country_id_fk>
+    </Artist>
+    <Artist id ="2">
+        <Name>Anitta</Name>
+        <Country_id_fk>1</Country_id_fk>
+    </Artist>
+</Artists>

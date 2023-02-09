@@ -34,7 +34,6 @@ public class EmployeeHandler extends DefaultHandler {
         if(qName.equalsIgnoreCase("Employee")){
             // create a new Employee and put it in Map
             String id = attributes.getValue("id");
-
             // initialize Employee object and set id attribute
             employee = new Employee();
             employee.setIdEmployees(Integer.parseInt(id));

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Fixed xml handling">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Fixed date in xml handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Demo/xmlTEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/xmlTEST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XML_handlers/ArtistHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XML_handlers/ArtistHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/XML_handlers/EmployeeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XML_handlers/EmployeeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/XML4SAX/Employees.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akira\Java Projects\Music_store\src\main\XML4SAX" />
       <recent name="C:\Users\akira\Java Projects\Music_store\src\main\resources" />
       <recent name="C:\Users\akira\Java Projects\Music_store" />
     </key>
@@ -181,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675905872533</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fixed date in xml handling">
+      <created>1675908112568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675908112568</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed date in xml handling">
+      <created>1675908154064</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675908154064</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +228,8 @@
     <MESSAGE value="Fixed stock use to buy_order create" />
     <MESSAGE value="Added xml handling" />
     <MESSAGE value="Fixed xml handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed xml handling" />
+    <MESSAGE value="Fixed date in xml handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed date in xml handling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
