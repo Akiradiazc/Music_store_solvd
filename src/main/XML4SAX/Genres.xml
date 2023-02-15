@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Genres>
     <Genre>
-        <idGenre>3</idGenre>
-        <Genre_name>Disco</Genre_name>
-    </Genre>
-    <Genre>
-        <idGenre>5</idGenre>
-        <Genre_name>Urban</Genre_name>
-    </Genre>
-    <Genre>
         <idGenre>4</idGenre>
         <Genre_name>Salsa</Genre_name>
     </Genre>
     <Genre>
         <idGenre>2</idGenre>
         <Genre_name>Bachata</Genre_name>
+    </Genre>
+    <Genre>
+        <idGenre>3</idGenre>
+        <Genre_name>Disco</Genre_name>
+    </Genre>
+    <Genre>
+        <idGenre>5</idGenre>
+        <Genre_name>Urban</Genre_name>
     </Genre>
 </Genres>

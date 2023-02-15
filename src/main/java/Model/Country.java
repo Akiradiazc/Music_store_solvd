@@ -1,5 +1,11 @@
 package Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Country {
     private int idCountry;
     private String Country_name;
@@ -10,6 +16,11 @@ public class Country {
         this.idCountry = idCountry;
         this.Country_name = Country_name;
     }
+    public Country(int idCountry, String Country_name){
+        this.idCountry = idCountry;
+        this.Country_name = Country_name;
+    }
+
 
     public int getIdCountry() {
         return idCountry;

@@ -1,10 +1,20 @@
 package Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Languages {
     private int idLanguages;
     private String Language_name;
     public Languages(){}
     public Languages(String Language_name){
+        this.idLanguages = idLanguages;
+        this.Language_name = Language_name;
+    }
+    public Languages(int idLanguages, String Language_name){
         this.idLanguages = idLanguages;
         this.Language_name = Language_name;
     }
