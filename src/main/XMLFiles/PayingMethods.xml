@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Paying_methods>
+    <Paying_method>
+        <idPaying_method>4</idPaying_method>
+        <Paying_method_name>RappiCard</Paying_method_name>
+    </Paying_method>
+</Paying_methods>

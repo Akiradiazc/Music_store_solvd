@@ -1,9 +1,20 @@
 package Model;
 
-import java.util.Date;
+import JAXBHandlers.DateAdapter;
 
+import java.sql.Date;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Bill {
     private int idBill;
+    @XmlElement(name = "Date", required = true)
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date date;
     private int buy_order_id_fk;
     private int Clients_id_fk;
@@ -14,6 +25,14 @@ public class Bill {
     public Bill(){}
 
     public Bill(Date date, int buy_order_id_fk, int clients_id_fk, int employees_id_fk, int paying_method_id_fk) {
+        this.idBill = idBill;
+        this.date = date;
+        this.buy_order_id_fk = buy_order_id_fk;
+        Clients_id_fk = clients_id_fk;
+        Employees_id_fk = employees_id_fk;
+        Paying_method_id_fk = paying_method_id_fk;
+    }
+    public Bill(int idBill, Date date, int buy_order_id_fk, int clients_id_fk, int employees_id_fk, int paying_method_id_fk) {
         this.idBill = idBill;
         this.date = date;
         this.buy_order_id_fk = buy_order_id_fk;

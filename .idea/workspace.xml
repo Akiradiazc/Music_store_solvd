@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Applied JAXB to Genre table">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Applied JAXB to Language and Country table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/XML4SAX/Genres.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/XML4SAX/Genres.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Demo/Test4JAXB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/Test4JAXB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JAXBHandlers/CountryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JAXBHandlers/CountryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JAXBHandlers/GenreHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JAXBHandlers/GenreHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Languages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Languages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Paying_method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Paying_method.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676425931069</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Applied JAXB to Language and Country table">
+      <created>1676441464874</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676441464874</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +268,8 @@
     <MESSAGE value="Added Tables for xml handling with SAX parser" />
     <MESSAGE value="Started adding JAXB" />
     <MESSAGE value="Applied JAXB to Genre table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Applied JAXB to Genre table" />
+    <MESSAGE value="Applied JAXB to Language and Country table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Applied JAXB to Language and Country table" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
