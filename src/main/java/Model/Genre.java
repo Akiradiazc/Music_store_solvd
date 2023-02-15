@@ -15,6 +15,10 @@ public class Genre {
         this.idGenre = idGenre;
         this.Genre_name = Genre_name;
     }
+    public Genre(int idGenre, String Genre_name){
+        this.idGenre = idGenre;
+        this.Genre_name = Genre_name;
+    }
 
     public String getGenre_name() {
         return Genre_name;

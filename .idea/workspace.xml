@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Added Artists table for xml handling">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Started adding JAXB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/xmlTEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/xmlTEST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Genre.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675922588121</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added Tables for xml handling with SAX parser">
+      <created>1675974584306</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675974584306</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Started adding JAXB">
+      <created>1675995280615</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675995280615</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +249,9 @@
     <MESSAGE value="Fixed xml handling" />
     <MESSAGE value="Fixed date in xml handling" />
     <MESSAGE value="Added Artists table for xml handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Artists table for xml handling" />
+    <MESSAGE value="Added Tables for xml handling with SAX parser" />
+    <MESSAGE value="Started adding JAXB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started adding JAXB" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
