@@ -1,0 +1,13 @@
+[ {
+  "idGenre" : 2,
+  "genre_name" : "Bachata"
+}, {
+  "idGenre" : 4,
+  "genre_name" : "Salsa"
+}, {
+  "idGenre" : 3,
+  "genre_name" : "Disco"
+}, {
+  "idGenre" : 5,
+  "genre_name" : "Urban"
+} ]

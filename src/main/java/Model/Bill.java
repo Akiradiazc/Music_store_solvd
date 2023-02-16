@@ -1,6 +1,7 @@
 package Model;
 
 import JAXBHandlers.DateAdapter;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.sql.Date;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,6 +10,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Bill {
