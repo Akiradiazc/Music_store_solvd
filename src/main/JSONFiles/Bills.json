@@ -2,7 +2,7 @@
   "idBill" : 3,
   "date" : "2023-08-23",
   "buy_order_id_fk" : 3,
-  "paying_method_id_fk" : 1,
   "employees_id_fk" : 1,
-  "clients_id_fk" : 1
+  "clients_id_fk" : 1,
+  "paying_method_id_fk" : 1
 } ]

@@ -1,6 +1,7 @@
 package Demo;
 
 import Model.*;
+import Views.*;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -61,6 +62,31 @@ public class JSONTest {
             mapper.writerWithDefaultPrettyPrinter().writeValue(FileBill, BillList);
             mapper.writerWithDefaultPrettyPrinter().writeValue(FilePM, PayingMethodList);
 
+        } catch(IOException e){
+            e.printStackTrace();
+        }
+
+        // JSON TO JAVA OBJECT
+        try{
+            // OBJECT'S LISTS EXTRACTOR
+            List<Genre> GenreList = Arrays.asList(mapper.readValue(FileGenre, Genre[].class));
+            List<Bill> BillList = Arrays.asList(mapper.readValue(FileBill, Bill[].class));
+            List<Country> CountryList = Arrays.asList(mapper.readValue(FileCountry, Country[].class));
+            List<Languages> LanguagesList = Arrays.asList(mapper.readValue(FileLanguage, Languages[].class));
+            List<Paying_method> PayingMethodList = Arrays.asList(mapper.readValue(FilePM, Paying_method[].class));
+
+            // PRINTERS
+            ViewGenre viewGenre = new ViewGenre();
+            ViewBIll viewBIll = new ViewBIll();
+            ViewCountry viewCountry = new ViewCountry();
+            ViewLanguages viewLanguages = new ViewLanguages();
+            ViewPaying_Method viewPaying_method = new ViewPaying_Method();
+
+            viewGenre.ViewGenres(GenreList);
+            viewCountry.ViewCountries(CountryList);
+            viewLanguages.ViewLanguage(LanguagesList);
+            viewBIll.ViewBills(BillList);
+            viewPaying_method.ViewPaying_methods(PayingMethodList);
         } catch(IOException e){
             e.printStackTrace();
         }
