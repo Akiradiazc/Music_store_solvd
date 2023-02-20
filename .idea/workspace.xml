@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Applied Jackson to parse Java objects to JSON">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Applied Jackson to parse JSON to Java objects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/JSONFiles/Genres.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/JSONFiles/Genres.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/JSONTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/JSONTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/ViewGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ViewGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676572149878</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Applied Jackson to parse JSON to Java objects">
+      <created>1676922259847</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676922259847</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +289,8 @@
     <MESSAGE value="Applied JAXB to Language and Country table" />
     <MESSAGE value="Applied JAXB to PayingMethod and Bill tables" />
     <MESSAGE value="Applied Jackson to parse Java objects to JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="Applied Jackson to parse Java objects to JSON" />
+    <MESSAGE value="Applied Jackson to parse JSON to Java objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Applied Jackson to parse JSON to Java objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
