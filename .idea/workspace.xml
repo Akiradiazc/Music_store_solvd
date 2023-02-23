@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="First attempt to implement MyBatis">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="First MyBatis implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/GenreDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/GenreDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IGenreDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IGenreDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CRUD_Genre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Genre-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LanguagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LanguagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/MyBatisDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/MyBatisDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisDAO/GenrDAOMyBatisImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyBatisDAO/GenrDAOMyBatisImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisDAO/LangDAOMyBatisImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyBatisDAO/LangDAOMyBatisImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Genre-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MyBatisMappers/Genre-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +52,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akira\Java Projects\Music_store\src\main\resources\MyBatisMappers" />
       <recent name="C:\Users\akira\Java Projects\Music_store\src\main\XML4SAX" />
       <recent name="C:\Users\akira\Java Projects\Music_store\src\main\resources" />
       <recent name="C:\Users\akira\Java Projects\Music_store" />
@@ -260,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676929887447</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="First MyBatis implementation">
+      <created>1677120336227</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1677120336228</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +285,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CRUD statements for Clients table working" />
     <MESSAGE value="CRUD statements for Clients table mods" />
     <MESSAGE value="CRUD statements for Employees table added" />
     <MESSAGE value="DB properties file added" />
@@ -300,7 +309,8 @@
     <MESSAGE value="Applied Jackson to parse Java objects to JSON" />
     <MESSAGE value="Applied Jackson to parse JSON to Java objects" />
     <MESSAGE value="First attempt to implement MyBatis" />
-    <option name="LAST_COMMIT_MESSAGE" value="First attempt to implement MyBatis" />
+    <MESSAGE value="First MyBatis implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="First MyBatis implementation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

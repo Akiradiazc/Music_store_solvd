@@ -15,6 +15,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="Genre-mapper.xml"/>
+        <mapper resource="MyBatisMappers//Genre-mapper.xml"/>
+        <mapper resource="MyBatisMappers//Languages-mapper.xml"/>
     </mappers>
 </configuration>

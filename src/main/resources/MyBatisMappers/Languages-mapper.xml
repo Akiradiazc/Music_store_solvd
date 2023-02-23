@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="iDao_interfaces.ILanguagesDAO">
+    <!--CREATE-->
+    <insert id="create">
+        INSERT INTO Languages(Language_name)
+        VALUES (#{Language_name})
+    </insert>
+
+    <!--READ-->
+    <select id="getAllLanguages" resultType="Model.Languages">
+        SELECT * from Languages ORDER BY idLanguages
+    </select>
+    <select id="getLanguageById" parameterType="int" resultType="Model.Languages">
+        SELECT * from Languages WHERE Language.id = #{Language.id}
+    </select>
+
+    <!--UPDATE-->
+    <update id="update">
+        UPDATE Languages SET
+        Language_name = #{name}
+        WHERE idLanguage = #{id}
+    </update>
+
+    <!--DELETE-->
+    <delete id="delete" parameterType="Model.Languages">
+        DELETE FROM Languages WHERE idLanguages = #{id}
+    </delete>
+
+</mapper>

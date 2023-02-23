@@ -2,6 +2,7 @@ package Controller;
 
 import DAO.LanguagesDAOImpl;
 import Model.Languages;
+import MyBatisDAO.LangDAOMyBatisImp;
 import Views.ViewLanguages;
 import iDao_interfaces.ILanguagesDAO;
 
@@ -23,7 +24,7 @@ public class LanguagesController {
     // --------- DAO to READ country
     public List<Languages> getAllLanguagesList(){
         List<Languages> LanguagesList = new ArrayList<>();
-        ILanguagesDAO dao = new LanguagesDAOImpl();
+        ILanguagesDAO dao = new LangDAOMyBatisImp();
         LanguagesList = dao.getAllLanguages();
         view.ViewLanguage(LanguagesList);
         return LanguagesList;

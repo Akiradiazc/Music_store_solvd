@@ -29,6 +29,4 @@
     DELETE FROM Genre WHERE idGenre = #{id}
   </delete>
 
-
-
 </mapper>
