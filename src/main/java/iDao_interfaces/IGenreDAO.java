@@ -1,6 +1,7 @@
 package iDao_interfaces;
 
 import Model.Genre;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 

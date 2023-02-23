@@ -5,10 +5,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Connection.ConnectionClass;
+import Connection.MySessionFactory;
 import Model.Genre;
 import iDao_interfaces.IGenreDAO;
+import org.apache.ibatis.session.SqlSession;
+
+import org.apache.ibatis.annotations.Select;
 
 public class GenreDAOImpl implements IGenreDAO{
+
+    //------------ NEW ADDITIONS ----------
+    // ADDING SINGLETON PATTERN TO BE USED WITH MYBATIS
+    private final MySessionFactory instance = MySessionFactory.getInstance();
 
     @Override
     public boolean create(Genre genre) {
@@ -32,6 +40,24 @@ public class GenreDAOImpl implements IGenreDAO{
         return create;
     }
 
+    // TESTING MYBATIS IMPLEMENTATION
+    @Override
+    public  List<Genre> getAllGenres(){
+        List<Genre> genreList = new ArrayList<>();
+        SqlSession session = null;
+        try{
+            session = instance.getFactory().openSession();
+            genreList = session.selectList("getAllGenres");
+        } catch(Exception error){
+            error.printStackTrace();
+        } finally{
+            if(session != null){
+                session.close();
+            }
+        }
+        return genreList;
+    }
+    /*
     @Override
     public List<Genre> getAllGenres() {
         //sql
@@ -61,7 +87,7 @@ public class GenreDAOImpl implements IGenreDAO{
         }
         return GenreList;
     }
-
+*/
     @Override
     public Genre getGenreById(int idGenre) {
         //sql

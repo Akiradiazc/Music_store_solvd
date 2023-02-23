@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Applied Jackson to parse JSON to Java objects">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="First attempt to implement MyBatis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/GenreDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/GenreDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IGenreDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iDao_interfaces/IGenreDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CRUD_Genre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Genre-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676922259847</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="First attempt to implement MyBatis">
+      <created>1676929887447</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676929887447</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +275,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First CRUD statements for Clients" />
     <MESSAGE value="CRUD statements for Clients table working" />
     <MESSAGE value="CRUD statements for Clients table mods" />
     <MESSAGE value="CRUD statements for Employees table added" />
@@ -290,7 +299,8 @@
     <MESSAGE value="Applied JAXB to PayingMethod and Bill tables" />
     <MESSAGE value="Applied Jackson to parse Java objects to JSON" />
     <MESSAGE value="Applied Jackson to parse JSON to Java objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Applied Jackson to parse JSON to Java objects" />
+    <MESSAGE value="First attempt to implement MyBatis" />
+    <option name="LAST_COMMIT_MESSAGE" value="First attempt to implement MyBatis" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
