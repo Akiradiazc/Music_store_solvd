@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="First MyBatis implementation">
+    <list default="true" id="107bf629-f1d5-4c1f-92d2-d44569f69968" name="Changes" comment="Some MyBatis implementations added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LanguagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LanguagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo/MyBatisDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo/MyBatisDEMO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisDAO/GenrDAOMyBatisImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyBatisDAO/GenrDAOMyBatisImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisDAO/LangDAOMyBatisImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyBatisDAO/LangDAOMyBatisImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Genre-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MyBatisMappers/Genre-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677120336228</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Some MyBatis implementations added">
+      <created>1677123669211</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1677123669211</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +286,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CRUD statements for Clients table mods" />
     <MESSAGE value="CRUD statements for Employees table added" />
     <MESSAGE value="DB properties file added" />
     <MESSAGE value="Added other tables to implment CRUD statements" />
@@ -310,7 +310,8 @@
     <MESSAGE value="Applied Jackson to parse JSON to Java objects" />
     <MESSAGE value="First attempt to implement MyBatis" />
     <MESSAGE value="First MyBatis implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="First MyBatis implementation" />
+    <MESSAGE value="Some MyBatis implementations added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some MyBatis implementations added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
